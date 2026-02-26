@@ -13,7 +13,7 @@ PASS=$3
 
 echo "Configuring $APP_SERVER server. Please wait......"
 
-ssh "$USER"@"$APP_SERVER" >> EOF
+ssh "$USER"@"$APP_SERVER" <<EOF
 
 echo "$PASS" | sudo -S yum install -y httpd php php-mysqlnd php-gd php-xml php-mbstring
 echo "$PASS" | sudo -S sed -i 's/^Listen 80/Listen 8083/' /etc/httpd/conf/httpd.conf

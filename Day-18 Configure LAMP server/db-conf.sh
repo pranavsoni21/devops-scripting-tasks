@@ -16,7 +16,7 @@ echo "Configuring database server. Please wait...."
 
 # shellcheck disable=SC1009
 # shellcheck disable=SC2087
-ssh "$DB_USER"@"$DB_SERVER" << EOF
+ssh "$DB_USER"@"$DB_SERVER" <<EOF
 echo "$PASS" | sudo -S yum install -y mariadb-server
 echo "$PASS" | sudo -S enable mariadb
 echo "$PASS" | sudo -S start mariadb

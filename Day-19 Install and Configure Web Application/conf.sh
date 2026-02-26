@@ -15,7 +15,8 @@ scp -r /home/thor/media "$USER"@"$APP_SERVER":/tmp/
 
 # ----------------Configuring server---------------
 echo "Configuring $APP_SERVER. Please wait....."
-ssh "$USER"@"$APP_SERVER" >> EOF
+# shellcheck disable=SC2087
+ssh "$USER"@"$APP_SERVER" <<EOF
 
 echo "$PASS" | sudo -S yum install -y httpd
 echo "$PASS" | sudo -S systemctl enable httpd

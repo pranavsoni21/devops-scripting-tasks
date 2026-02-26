@@ -1,7 +1,6 @@
 import paramiko
 
 # Server configuration
-
 app_servers = [
     {"host": "stapp01", "username": "tony", "password": "<pass>"},
     {"host": "stapp02", "username": "steve", "password": "<pass>"},
