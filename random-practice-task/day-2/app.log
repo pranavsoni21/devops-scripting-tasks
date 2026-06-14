@@ -1,0 +1,9 @@
+INFO Application started
+INFO User login successful
+ERROR Database connection failed
+WARNING Memory usage high
+INFO Request completed
+ERROR Redis connection timeout
+INFO Health check passed
+WARNING Disk usage 85%
+ERROR Payment service unavailable
