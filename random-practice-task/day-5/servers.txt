@@ -1,0 +1,5 @@
+server1,healthy
+server2,healthy
+server3,unhealthy
+server4,healthy
+server5,unhealthy
